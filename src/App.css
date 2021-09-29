@@ -1,0 +1,301 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+.banner{
+    width: 100%;
+    height: 100vh;
+    background: url('/src/img/bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.banner__content{
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    color: #fff;
+}
+.container{
+    width: 1200px;
+    max-width: 1200px;
+    margin: 0 auto;
+   
+}
+.banner__text{
+    width: 500px;
+}
+.banner__text h3{
+    font-size: 48px;
+    font-family: 'Nunito';
+    line-height: 48px;
+}
+.banner__text h1{
+    font-size: 77px;
+    width: 426px;
+    line-height: 80px;
+    font-weight: 800;
+    margin: 20px 0;
+}
+.banner__text p{
+    font-size: 24px;
+    width: 512px;
+    line-height: 34px;
+}
+.navbar{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+}
+.navbar__text{
+    height: 60px;
+    display: flex;
+    align-items: center;
+    width: 1200px;
+    margin: 0px auto;
+}
+.navbar ul{
+    width: 60%;
+    list-style-type:none;
+    display: flex;
+    justify-content: flex-end;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: #fff;
+    padding: 0px 15px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+.logo{
+    width: 40%;
+}
+.logo img{
+    width: 220px;
+}
+.banner__btn{
+    margin-top: 35px;
+}
+.btn{
+    text-decoration: none;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 700;
+    border-radius: 30px;
+    padding: 20px 40px;
+}
+.btn-smart{
+    background: rgb(255, 69, 79);
+}
+.about{
+    margin-top: 50px;
+    margin-top: 90px;
+}
+.row{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.col-6{
+    width: 50%;
+}
+.col-3{
+    width: 25%;  
+}
+.col-4{
+    width: 33.33%;
+}
+.about_p{
+    padding: 45px;
+}
+.about h3{
+    color: rgba(37,37,37,0.7);
+    font-size: 30px;
+    line-height: 35px;
+    text-align: left;
+    font-family: Montserrat;
+    font-weight: 700;
+    font-style: normal;
+}
+.about h1{
+    font-size: 40px;
+    color: #252525;
+    line-height: 40px;
+    text-align: left;
+    /* font-family: Montserrat; */
+    padding-top: 15px;
+    font-weight: 700;
+    font-style: normal;
+}
+.about p{
+    font-size: 18px;
+    line-height: 29px;
+    /* font-family: Nunito; */
+    color: #8b8b8b;
+    padding: 25px 0px;
+}
+.about__btn{
+    margin-top: 25px;
+}
+.about__img{
+    width: 100%;
+    overflow: hidden;
+}
+.about__img img{ 
+    width: 100%;
+}
+.shop{
+    width: 100%;
+    background: url('/src/img/order.jpg');
+    height: 400px;
+    background-attachment: fixed;
+}
+.shop__text{
+    height: 400px;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    width: 450px;
+    justify-content: center;
+    margin: 0 auto;
+}
+.shop__text h1{
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 60px;
+    letter-spacing: 0.5px;
+    font-style: normal;
+}
+.shop__text h1 span{
+    font-size: 45px;
+    width: 500px;
+}
+.shop__btn{
+    margin: 25px auto;
+}
+.clients{
+    width: 100%;
+    padding: 80px auto;
+    background: #252525;
+    height: 316px;
+    margin-top: 40px;
+    color: #fff;
+}
+.client h2{
+    font-size: 50px;
+    font-weight: 700;
+     margin-top: 120px;
+    /* display: inline;
+    justify-content: space-evenly;  */
+}
+/* this is important for the defining width */
+
+.client{
+    text-align: center;
+}
+.client p{
+    font-size: 16px;
+}
+/*************************************** */
+.prices{
+    width: 100%;
+    padding: 80px 0;
+}
+.price{
+    padding: 20px ;
+    text-align: center;
+}
+.price__img{
+    width: 100%;
+}
+.price__img img{
+    width: 250px;
+}
+.price__heading{
+    font-size: 30px;
+    margin-top: 20px;
+   
+}
+.price__text{
+    margin-top: 15px;
+    color: #8b8b8b;
+    font-size: 18px;
+    font-weight: 300;
+}
+.price__rs{
+    font-size: 30px;
+    margin-top: 15px;
+}
+
+@media(max-width:700px){
+    .navbar__text{
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin: 0 auto;
+    }
+    .logo{
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+    .container{
+        width: 100%;
+        padding: 0 30px;
+    }
+    .banner__text{
+        width: auto;
+    }
+    .banner__text h3{
+        font-size: 25px !important;
+        
+    }
+    .banner__text h1{
+        font-size: 40px;
+        /* width: 426px; */
+        line-height: 60px;
+        font-weight: 800;
+        margin: 20px 0 ;
+    }
+    .banner__text p{
+        font-size: 20px;
+        /* width: 512px;
+        line-height: 34px; */
+    }
+    .col-3,.col-4,.col-6{
+        width: 100%;
+    }
+    .client{
+        margin: 20px 0;
+    }
+    .navbar ul {
+        width: 100%;
+        justify-content: center;
+    }
+    .navbar ul li a{
+        text-decoration: none;
+        color: #fff;
+        padding: 0px 10px;
+        font-weight: 300;
+        
+        text-transform: uppercase;
+    }
+    .about h1{
+        font-size: 22px;
+    }
+    .shop h1{
+        font-size: 22px;
+    }
+    .menu h1{
+        font-size: 22px;
+    }
+}
